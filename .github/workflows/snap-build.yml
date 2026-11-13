@@ -12,13 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Fetch the Linux release
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
           mkdir -p release
-          gh release download v0.1.5 --dir release \
-            --pattern vellire_0.1.5_amd64.deb --pattern SHA256SUMS-0.1.5
           cd release
+          base=https://raw.githubusercontent.com/${{ github.repository }}/v0.1.5-packages/packages
+          curl --fail --location --retry 3 -O "$base/vellire_0.1.5_amd64.deb"
+          curl --fail --location --retry 3 -O "$base/SHA256SUMS-0.1.5"
           sha256sum --check --ignore-missing SHA256SUMS-0.1.5
       - uses: snapcore/action-build@v1
         id: build
