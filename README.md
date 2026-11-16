@@ -1,12 +1,14 @@
 # Vellire
 
-Vellire is a Unicode typing studio. Choose a style from the library, try it in the app, or apply it as you type in compatible Linux apps.
+Vellire is a Unicode typing studio. Choose a style from the library, try it in the app, or apply it as you type in compatible Windows and Linux apps.
 
 [Project website](https://vellire.netlify.app/) · [All releases](https://github.com/Zenvired/vellire/releases)
 
 ## Windows
 
-Download [Vellire 0.1.6 for Windows x64](https://github.com/Zenvired/vellire/releases/download/v0.1.6/Vellire_0.1.6_x64-setup.exe), run setup, then open Vellire from the Start menu. Setup can install Microsoft Edge WebView2 if needed.
+Download [Vellire 0.1.7 for Windows x64](https://github.com/Zenvired/vellire/releases/download/v0.1.7/Vellire_0.1.7_x64-setup.exe), run setup, then open Vellire from the Start menu. Setup can install Microsoft Edge WebView2 if needed.
+
+Choose a style such as **Bold** and type into a standard Windows edit field with the US keyboard layout. Press **Alt + S** to start or **Alt + T** to pause. Password fields stay plain. Use the in-app preview for browsers and apps with custom text editors.
 
 ## Linux
 
